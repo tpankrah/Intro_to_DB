@@ -28,15 +28,15 @@ CREATE TABLE IF NOT EXISTS Customers (
 
 
 -- Orders: Stores information about orders placed by customers.
-CREATE TABLE IF NOT EXISTS Orders(
-`order_id` INT PRIMARY KEY,
-`customer_id` INT,
-`order_date` DATE,
-FOREIGN KEY (`customer_id`) REFERENCES Customers(`customer_id`)
+CREATE TABLE IF NOT EXISTS Orders (
+    `order_id` INT PRIMARY KEY,
+    `customer_id` INT,
+    `order_date` DATE,
+    FOREIGN KEY (`customer_id`) REFERENCES Customers(`customer_id`)
 );
 -- Order_Details: Stores information about the books included in each order.
 
-CREATE TABLE IF NOT EXISTS order_details(
+CREATE TABLE IF NOT EXISTS order_details (
 `orderdetailid` INT PRIMARY KEY,
 `order_id` INT,
 `book_id` INT,
