@@ -3,8 +3,8 @@ USE alx_book_store;
 
 
 CREATE TABLE  IF NOT EXISTS authors (
-    `author_id` INT PRIMARY KEY,
-    `author_name` VARCHAR(215)
+    author_id INT PRIMARY KEY,
+    author_name VARCHAR(215)
 );
 
 
@@ -21,10 +21,10 @@ CREATE TABLE IF NOT EXISTS  Books (
 
 -- Customers: Stores information about customers.
 CREATE TABLE IF NOT EXISTS Customers (
-    `customer_id` INT PRIMARY KEY,
-    `customer_name` VARCHAR(215),
-    `email` VARCHAR(215),
-    `address` TEXT
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(215),
+    email VARCHAR(215),
+    address TEXT
 );
 
 
