@@ -8,8 +8,7 @@ SELECT
     COLUMN_KEY,
     EXTRA
 FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = DATABASE()
-  AND TABLE_NAME = 'books';
-
+WHERE TABLE_SCHEMA = 'alx_book_store'
+  AND TABLE_NAME = 'Books;
 
 
